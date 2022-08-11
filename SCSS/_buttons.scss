@@ -1,0 +1,10 @@
+%btn {
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 50px;
+
+    &:hover {
+        cursor: pointer;
+        background: darken($extra-color, 50%);
+    }
+}

@@ -1,0 +1,58 @@
+@import 'config';
+@import 'buttons';
+@import 'centering';
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+}
+
+body {
+    background: $cream;
+}
+
+.container {
+    @extend %center;
+    // background: $white;
+    // padding: 5px;
+    align-items: center;
+
+    .content {
+        // align-items: center;
+        // text-align: center;
+        background: $white;
+        padding: 5px;
+        margin-top: -9px;
+    }
+
+    .product-view {
+        height: 200px;
+        width: 320px;
+        // margin-bottom: 0px;
+    }
+
+    .item-price {
+        display: flex;
+        
+        article {
+            margin-right: 5px;
+        }
+
+        .price {
+            font-size: 45px;
+            color: $primary-color;
+        }
+    }
+}
+
+.btn {
+    @extend %btn;
+    background: $primary-color;
+    color: $white;
+    display: flex;
+
+    .icon-cart {
+        margin-right: 6px;
+    }
+}
